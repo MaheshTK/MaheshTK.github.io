@@ -45,7 +45,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 html {
@@ -55,7 +55,7 @@ html {
 }
 @media (min-width: 38rem) {
   html {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
