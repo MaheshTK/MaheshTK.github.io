@@ -15,6 +15,5 @@ There are various ways, which can be used to combine various files. One can sele
 
 Combine two files to generate one output file.
 
-```pdftk one.pdf two.pdf cat output output.pdf 
-
-pdftk A=one.pdf B=two.pdf cat A B output output.pdf```
+```pdftk one.pdf two.pdf cat output output.pdf ```
+```pdftk A=one.pdf B=two.pdf cat A B output output.pdf```
