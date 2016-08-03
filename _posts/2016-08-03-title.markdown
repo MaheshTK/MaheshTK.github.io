@@ -61,7 +61,7 @@ My country 'tis of thee, sweet land of liberty, of thee I sing.
 Land where my fathers died, land of the Pilgrim's pride,
 From every mountainside, let freedom ring!
 
-| Left-aligned | Center-aligned  |
+| <th>Tables</th> | Center-aligned  |
 | :---         |     :---:      |        
 | ![CLAIRE](http://pthumb.lisimg.com/image/8208651/280full.jpg)  | ![CLAIRE](http://pthumb.lisimg.com/image/8208651/280full.jpg)     | 
 | git diff     | git diff     |
