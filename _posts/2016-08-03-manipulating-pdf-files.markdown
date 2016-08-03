@@ -25,6 +25,7 @@ Combine two files using handle
 Combine specific pages in different files
 
 ```pdftk A=one.pdf B=two.pdf cat A1-20 B21-end output output.pdf```
+
 Reverse order of pages in file
 
 ```pdftk A=one.pdf cat Aend-1 output output.pdf```
