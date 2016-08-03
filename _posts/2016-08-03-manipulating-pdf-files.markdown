@@ -14,7 +14,10 @@ Slowly and steadily Portable Document Format AKA pdf has become de facto standar
 There are various ways, which can be used to combine various files. One can select pdf files, respective page ranges, collate files, reverse page order and combination of all above.
 
 #### Combine two files to generate one output file.
-```
-pdftk one.pdf two.pdf cat output output.pdf
-pdftk A=one.pdf B=two.pdf cat A B output output.pdf
-```
+```pdftk one.pdf two.pdf cat output output.pdf```
+
+```pdftk A=one.pdf B=two.pdf cat A B output output.pdf```
+
+```pdftk A=one.pdf B=two.pdf cat A1-20 B21-end output output.pdf```
+
+```pdftk A=one.pdf cat Aend-1 output output.pdf```
