@@ -107,9 +107,9 @@ Encrypt a PDF using 128-bit strength (the default), withhold all permissions (th
 
 ```pdftk one.pdf output output.pdf owner_pw ownpass```
 
-Encrypt pdf with owner password but provide user password for opening file.
+Encrypt pdf with owner password but provide user password for opening file. It is also noted that input password can also be provided if input file is password protected.
 
-```pdftk one.pdf output output.pdf owner_pw ownerpass user_pw userpass```
+```pdftk one.pdf input_pw A=foopass output output.pdf owner_pw ownerpass user_pw userpass```
 
 Similarly, limited access can be provided by using allow parameter. These privileges include `Printing` , `DegradedPrinting` , `ModifyContents` , `CopyContents`, `AllFeatures`. One such example where degraded printing is allowed.
 
