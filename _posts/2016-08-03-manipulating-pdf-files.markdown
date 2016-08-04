@@ -49,6 +49,10 @@ To specify specific digit prefix
 
 ```pdftk one.pdf burst output out%02d.pdf```
 
+To extract only even pages from document
+
+```pdftk A=one.pdf cat A1-20odd output output.pdf```
+
 ### Combine two files to generate one output file.
 
 Combine two files
@@ -78,3 +82,15 @@ Rotate first page clockwise.
 Rotate specific pages of different documents and combine them. 
 
 ```pdftk A=one.pdf B=two.pdf cat A1-12east A13-end Bsouth```
+
+### Add stamp or letterhead header to file
+
+Watermark can be added in the background of pages using *background* command. This feature can also be used to add letterhead heading to the document pages. However, it shall be noted that the image is placed in the background. It shall be noted that this command takes first page of background file and use it for all pages in main document.
+
+```pdftk in.pdf background back.pdf output out.pdf````
+
+The *multibackground* command places each page of the background PDF to the corresponding page of the input PDF. If the input PDF has more pages than the stamp PDF, then the final stamp page is repeated across these remaining pages in the input PDF.
+
+If the main file is not transparent, the background image will not be visible. For such cases, *stamp* command can be used.
+
+```pdftk in.pdf stamp foreground.pdf output out.pdf````
