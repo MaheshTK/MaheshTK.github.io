@@ -27,6 +27,14 @@ Repair a PDF’s corrupted XREF table and stream lengths, if possible
 
 ```pdftk broken.pdf output fixed.pdf```
 
+To split a pdf file into multiple documents with four digit (default) prefix
+
+```pdftk one.pdf burst```
+
+To specify specific digit prefix
+
+```pdftk one.pdf burst output out%02d.pdf```
+
 ### Combine two files to generate one output file.
 
 Combine two files
@@ -44,15 +52,6 @@ Combine specific pages in different files
 To combine multiple documents in a directory without listing each one, use wildcards (`*`):
 
 ```pdftk *.pdf cat output newfile.pdf```
-
-To split a pdf file’s pages into multiple documents with four digit (default) prefix
-
-```pdftk one.pdf burst```
-
-To specify specific digit prefix
-
-```pdftk one.pdf burst output out%02d.pdf```
-
 
 ### Rotate pages
 
