@@ -94,3 +94,5 @@ The *multibackground* command places each page of the background PDF to the corr
 If the main file is not transparent, the background image will not be visible. For such cases, *stamp* command can be used.
 
 ```pdftk in.pdf stamp foreground.pdf output out.pdf````
+
+मराठी 
