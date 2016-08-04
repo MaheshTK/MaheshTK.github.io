@@ -13,7 +13,22 @@ Slowly and steadily Portable Document Format AKA pdf has become de facto standar
 
 There are various ways, which can be used to combine various files. One can select pdf files, respective page ranges, collate files, reverse page order and combination of all above.
 
-#### Combine two files to generate one output file.
+### Operating single file
+
+Extract some pages from file 
+
+```pdftk one.pdf cat 1-12 24-end output output.pdf```
+
+Reverse order of pages in file
+
+```pdftk A=one.pdf cat Aend-1 output output.pdf```
+
+Repair a PDF’s corrupted XREF table and stream lengths, if possible
+
+```pdftk broken.pdf output fixed.pdf```
+
+### Combine two files to generate one output file.
+
 Combine two files
 
 ```pdftk one.pdf two.pdf cat output output.pdf```
@@ -26,6 +41,14 @@ Combine specific pages in different files
 
 ```pdftk A=one.pdf B=two.pdf cat A1-20 B21-end output output.pdf```
 
-Reverse order of pages in file
+### Rotate pages
 
-```pdftk A=one.pdf cat Aend-1 output output.pdf```
+For rotating pages, the normal orientation off pages is assumed vertical. It means at 12 O'clock position or towards north as seen on map. So, specify clockwise rotation, specify east. For anti-clockwise rotation, specify west and for 180 degree rotation, specify south. It will be clear from following examples.
+
+Rotate first page clockwise.
+
+```pdftk one.pdf cat cat 1east 2-end output out.pdf```
+
+Rotate specific pages of different documents and combine them. 
+
+```pdftk A=one.pdf B=two.pdf cat A1-12east A13-end Bsouth```
