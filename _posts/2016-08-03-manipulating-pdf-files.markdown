@@ -41,6 +41,10 @@ Combine specific pages in different files
 
 ```pdftk A=one.pdf B=two.pdf cat A1-20 B21-end output output.pdf```
 
+To combine multiple documents in a directory without listing each one, use wildcards (`*`):
+
+```pdftk *.pdf cat output newfile.pdf```
+
 ### Rotate pages
 
 For rotating pages, the normal orientation off pages is assumed vertical. It means at 12 O'clock position or towards north as seen on map. So, specify clockwise rotation, specify east. For anti-clockwise rotation, specify west and for 180 degree rotation, specify south. It will be clear from following examples.
