@@ -45,6 +45,15 @@ To combine multiple documents in a directory without listing each one, use wildc
 
 ```pdftk *.pdf cat output newfile.pdf```
 
+To split a pdf file’s pages into multiple documents with four digit (default) prefix
+
+```pdftk one.pdf burst```
+
+To specify specific digit prefix
+
+```pdftk one.pdf burst output out%02d.pdf```
+
+
 ### Rotate pages
 
 For rotating pages, the normal orientation off pages is assumed vertical. It means at 12 O'clock position or towards north as seen on map. So, specify clockwise rotation, specify east. For anti-clockwise rotation, specify west and for 180 degree rotation, specify south. It will be clear from following examples.
