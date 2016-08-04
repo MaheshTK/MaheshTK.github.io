@@ -13,9 +13,9 @@ Slowly and steadily Portable Document Format AKA pdf has become de facto standar
 
 There are two open softwares which can be used for these purposes.
 
-[PDFTK] (https://www.pdflabs.com/tools/pdftk-server/)
+[PDFTK](https://www.pdflabs.com/tools/pdftk-server/)
 
-[CPDF] (http://community.coherentpdf.com/)
+[CPDF](http://community.coherentpdf.com/)
 
 The **cpdf** is very powerful. However, it has limited free license which can only be used for personal and academic purposes only. 
 
