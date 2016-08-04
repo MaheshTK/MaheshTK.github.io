@@ -95,4 +95,26 @@ If the main file is not transparent, the background image will not be visible. F
 
 ```pdftk in.pdf stamp foreground.pdf output out.pdf````
 
-मराठी 
+### Encrypting and decrypting pdf files
+
+This is next important function is ability to encrypt pdf files and control access to pdf files.
+
+During encryption, two types of passwords can be specified. One is user password which is used for opening and limiting access to pdf file for the recipient. Other is owner password which provides master access.
+
+Encrypt a PDF using 128-bit strength (the default), withhold all permissions (the default)
+
+```pdftk one.pdf output output.pdf owner_pw ownpass```
+
+Encrypt pdf with owner password but provide user password for opening file.
+
+```pdftk one.pdf output output.pdf owner_pw ownerpass user_pw userpass```
+
+Similarly, limited access can be provided by using allow parameter. These privileges include `Printing` , `DegradedPrinting` , `ModifyContents` , `CopyContents`, `AllFeatures`. One such example where degraded printing is allowed.
+
+```pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing```
+
+
+
+
+
+
