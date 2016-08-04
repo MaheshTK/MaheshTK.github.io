@@ -23,10 +23,6 @@ The _**pdftk**_ has most commonly used functionalities except cropping and stamp
 
 While CPDF is more powerful and is best choice for personal uses, PDFTK is a general purpose licence which can be used at any application. 
 
-## Combine pdf files
-
-There are various ways, which can be used to combine various files. One can select pdf files, respective page ranges, collate files, reverse page order and combination of all above.
-
 ### Operating single file
 
 Extract some pages from file 
@@ -53,7 +49,13 @@ To extract only even pages from document
 
 ```pdftk A=one.pdf cat A1-20odd output output.pdf```
 
+Write a report on PDF document metadata and bookmarks to report.txt
+
+``pdftk in.pdf dump_data output report.txt``
+
 ### Combine two files to generate one output file.
+
+There are various ways, which can be used to combine various files. One can select pdf files, respective page ranges, collate files, reverse page order and combination of all above.
 
 Combine two files
 
@@ -113,8 +115,14 @@ Similarly, limited access can be provided by using allow parameter. These privil
 
 ```pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing```
 
+### Other features
 
+Extract metadata from pdf file
 
+```pdftk in.pdf update_info in.info output out.pdf```
 
+Place metadata to pdf file from txt file
 
+```pdftk in.pdf update_info in.info output out.pdf```
 
+The pdftk has other functionalities such as attaching files to pdf, unpacking files, compress or flatten pdf files. Since, these functions are not very common, these are not covered here.
