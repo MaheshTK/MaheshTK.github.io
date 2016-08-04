@@ -9,6 +9,20 @@ categories: [office, productivity]
 
 Slowly and steadily Portable Document Format AKA pdf has become de facto standard for sharing documents and for web publishing in last decade. A pdf file presents many advantages for transmitting documents. As the name indicates portability is the USP of this format. It frees from the most important worry while transmitting documents : whether the document will open at other end. That is what the crucial stage of communication : reception. While interpretation can be left to individual but pdf format will take care that the document will be open for interpretation. It also offers some other advantages such as small size, independence from originating format, web display and open ended format.
 
+## The competition
+
+There are two open softwares which can be used for these purposes.
+
+[PDFTK] (https://www.pdflabs.com/tools/pdftk-server/)
+
+[CPDF] (http://community.coherentpdf.com/)
+
+The **cpdf** is very powerful. However, it has limited free license which can only be used for personal and academic purposes only. 
+
+The **pdftk*** has most commonly used functionalities except cropping and stamping. It is distributed under [GNU General Public License] (https://www.gnu.org/licenses/gpl-3.0.en.html) making it possible to use for commercial purposes like in office work.
+
+While CPDF is more powerful and is best choice for personal uses, PDFTK is a general purpose licence which can be used at any application. 
+
 ## Combine pdf files
 
 There are various ways, which can be used to combine various files. One can select pdf files, respective page ranges, collate files, reverse page order and combination of all above.
