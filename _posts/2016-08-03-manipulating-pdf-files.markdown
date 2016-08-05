@@ -9,9 +9,15 @@ categories: [office, productivity]
 
 Slowly and steadily Portable Document Format AKA pdf has become de facto standard for sharing documents and for web publishing in last decade. A pdf file presents many advantages for transmitting documents. As the name indicates portability is the USP of this format. It frees from the most important worry while transmitting documents : whether the document will open at other end. That is what the crucial stage of communication : reception. While interpretation can be left to individual but pdf format will take care that the document will be open for interpretation. It also offers some other advantages such as small size, independence from originating format, web display and open ended format.
 
+The other convenience of pdf files is that these can be treated the same way, as a paper documents can be used. It is possible to bundle together pdfs, crop them, split them and encrypt them. However, for all these advanced operations, special pdf editors are required. The most common editors like [Adobe Acrobat Professional](https://creative.adobe.com/products/acrobat) are pretty steeply priced.
+
+It is perfectly possible to develope a workflow which consists of purely free or open source programs and it can be as powerful or better than these commercial products. 
+
+There are many free pdf readers available including those provided by big commercial products. The [Adobe Acrobat Reader](https://get.adobe.com/reader/) and [PDF-XChange Viewer](http://www.tracker-software.com/product/pdf-xchange-viewer) are such examples. My personal choice is [Foxit Reader](https://www.foxitsoftware.com/products/pdf-reader/) which comes bundled with pretty good pdf printer.
+
 ## The competition
 
-There are two open softwares which can be used for these purposes.
+However, for manipulating pdf files, very few user friendly options are available. There are two commandline tools which I have found out to be excellent choice for manipulating pdf files. 
 
 [PDFTK](https://www.pdflabs.com/tools/pdftk-server/)
 
@@ -22,6 +28,8 @@ The _**cpdf**_ is very powerful. However, it has limited free license which can 
 The _**pdftk**_ has most commonly used functionalities except cropping and stamping. It is distributed under [GNU General Public License](https://www.gnu.org/licenses/gpl-3.0.en.html) making it possible to use for commercial purposes like in office work.
 
 While CPDF is more powerful and is best choice for personal uses, PDFTK is a general purpose licence which can be used at any application. 
+
+The main advantage of these programs is that these are free, portable, efficient and powerful. It is also possible to use a scripting language to batch process files.
 
 ### Operating single file
 
