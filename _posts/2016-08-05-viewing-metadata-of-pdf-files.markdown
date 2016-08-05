@@ -11,7 +11,7 @@ First step towards handling metadata is to identify which type of data is embedd
 
 Exiftool can be downloaded [here](http://www.sno.phy.queensu.ca/~phil/exiftool/exiftool-10.25.zip).
 
-It can be placed in system folder (usually C:\Windows folder) after renaming the executable from 'exiftool(‑k).exe' to 'exiftool.exe' to allow it to be run by typing 'exiftool' at the command line.
+It can be placed in system folder (usually C:\Windows folder) after renaming the executable from `exiftool(‑k).exe` to `exiftool.exe` to allow it to be run by typing `exiftool` at the command line.
 
 Once done, fire commandline and start using Exiftool. I prefer to to open the desired folder in explorer, and then right click while holding SHIFT key. Then from context menu, select 'open command line here'. 
 
@@ -19,8 +19,8 @@ Once done, fire commandline and start using Exiftool. I prefer to to open the de
 
 Type following in command line to view metadata.
 
-'''exiftool -a -g one.pdf '''
+```exiftool -a -g one.pdf ```
 
 Extract metadata to text file
 
-'''exiftool -a -g one.pdf  > meta.txt'''
+```exiftool -a -g one.pdf  > meta.txt```
