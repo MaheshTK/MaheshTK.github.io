@@ -31,6 +31,15 @@ While CPDF is more powerful and is best choice for personal uses, PDFTK is a gen
 
 The main advantage of these programs is that these are free, portable, efficient and powerful. It is also possible to use a scripting language to batch process files.
 
+### Cheat sheet
+
+|Combine| ```pdftk A=one.pdf B=two.pdf cat A B output output.pdf```|
+|Specific Combine|```pdftk A=one.pdf B=two.pdf cat A1-20 B21-end output output.pdf```|
+|Extract|```pdftk one.pdf cat 1-12 24-end output output.pdf```|
+|Rotate|```pdftk one.pdf cat cat 1east 2-end output out.pdf```|
+|Burst|```pdftk one.pdf burst```|
+|Encrypt|pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing|
+
 ### Operating single file
 
 Extract some pages from file 
@@ -121,7 +130,7 @@ Encrypt pdf with owner password but provide user password for opening file. It i
 
 Similarly, limited access can be provided by using allow parameter. These privileges include `Printing` , `DegradedPrinting` , `ModifyContents` , `CopyContents`, `AllFeatures`. One such example where degraded printing is allowed.
 
-```pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing```
+```pdftk one.pdf output out.pdf owner_pw foo user_pw baz allow printing```
 
 ### Other features
 
