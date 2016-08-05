@@ -25,9 +25,17 @@ Extract metadata to text file
 
 ```exiftool -a -g one.pdf  > meta.txt```
 
+To delete metadata of files 
 
+```exiftool -all= one.pdf```
 
+Generate CSV file with common tags from all images in a directory
 
+exiftool -all -csv one.pdf > out.csv
+
+Update metadata for all images in a directory from CSV file
+
+exiftool -csv=out.csv one.pdf
 
 
 [MetaData Extraction](http://www.forensicswiki.org/wiki/Document_Metadata_Extraction)
