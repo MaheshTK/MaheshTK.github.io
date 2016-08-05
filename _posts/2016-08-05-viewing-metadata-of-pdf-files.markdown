@@ -29,13 +29,20 @@ To delete metadata of files
 
 ```exiftool -all= one.pdf```
 
+### Extract and update metadata through files.
+
 Generate CSV file with common tags from all images in a directory
 
-exiftool -all -csv one.pdf > out.csv
+```exiftool -csv one.pdf > out.csv```
 
 Update metadata for all images in a directory from CSV file
 
-exiftool -csv=out.csv one.pdf
+```exiftool -csv=out.csv one.pdf```
 
+### Delete XMP data of file
+
+For deleting XMP data 
+
+```BeCyPDFMetaEdit one.pdf  -X 1```
 
 [MetaData Extraction](http://www.forensicswiki.org/wiki/Document_Metadata_Extraction)
