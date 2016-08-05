@@ -24,3 +24,10 @@ Type following in command line to view metadata.
 Extract metadata to text file
 
 ```exiftool -a -g one.pdf  > meta.txt```
+
+
+
+
+
+
+[MetaData Extraction](http://www.forensicswiki.org/wiki/Document_Metadata_Extraction)
