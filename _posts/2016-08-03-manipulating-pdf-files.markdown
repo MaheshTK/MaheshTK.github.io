@@ -42,6 +42,14 @@ The main advantage of these programs is that these are free, portable, efficient
 |Encrypt|`pdftk one.pdf output output.pdf owner_pw ownpass`|
 |Special Encrypt|`pdftk one.pdf output out.pdf owner_pw foo user_pw baz allow printing`|
 
+### Installation
+
+PDFtk Server is command-line tool for working with PDFs. Though named as server, it also works fine as stand alone program on desktops. It can be downloaded [here](https://www.pdflabs.com/tools/pdftk-server/). 
+
+Once installed it is available at command line. In case of any issue, copy pdftk.exe and dll file to system folder (usually C:\Windows\). 
+
+Command line can be invoked in many ways. One of the simplest way is to open through explorer. Open the working folder, right click while pressing SHIFT key. From context menu, select *Open command window here*. Voila !! command line with curser at present folder is open. Just start typing the commands.
+
 ### Operating single file
 
 Extract some pages from file 
