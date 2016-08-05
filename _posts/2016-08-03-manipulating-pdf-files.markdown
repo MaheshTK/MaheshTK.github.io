@@ -34,11 +34,13 @@ The main advantage of these programs is that these are free, portable, efficient
 ### Cheat sheet
 
 |Combine| ```pdftk A=one.pdf B=two.pdf cat A B output output.pdf```|
-|Specific Combine|```pdftk A=one.pdf B=two.pdf cat A1-20 B21-end output output.pdf```|
+|Special Combine|```pdftk A=one.pdf B=two.pdf cat A1-20 B21-end output output.pdf```|
+|Combine all|`pdftk *.pdf cat output newfile.pdf`|
 |Extract|```pdftk one.pdf cat 1-12 24-end output output.pdf```|
 |Rotate|```pdftk one.pdf cat cat 1east 2-end output out.pdf```|
 |Burst|```pdftk one.pdf burst```|
-|Encrypt|`pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing`|
+|Encrypt|`pdftk one.pdf output output.pdf owner_pw ownpass`|
+|Special Encrypt|`pdftk one.pdf output out.pdf owner_pw foo user_pw baz allow printing`|
 
 ### Operating single file
 
@@ -106,13 +108,13 @@ Rotate specific pages of different documents and combine them.
 
 Watermark can be added in the background of pages using *background* command. This feature can also be used to add letterhead heading to the document pages. However, it shall be noted that the image is placed in the background. It shall be noted that this command takes first page of background file and use it for all pages in main document.
 
-```pdftk in.pdf background back.pdf output out.pdf````
+```pdftk one.pdf background back.pdf output out.pdf````
 
 The *multibackground* command places each page of the background PDF to the corresponding page of the input PDF. If the input PDF has more pages than the stamp PDF, then the final stamp page is repeated across these remaining pages in the input PDF.
 
 If the main file is not transparent, the background image will not be visible. For such cases, *stamp* command can be used.
 
-```pdftk in.pdf stamp foreground.pdf output out.pdf````
+```pdftk one.pdf stamp foreground.pdf output out.pdf````
 
 ### Encrypting and decrypting pdf files
 
@@ -136,10 +138,10 @@ Similarly, limited access can be provided by using allow parameter. These privil
 
 Extract metadata from pdf file
 
-```pdftk in.pdf update_info in.info output out.pdf```
+```pdftk one.pdf update_info in.info output out.pdf```
 
 Place metadata to pdf file from txt file
 
-```pdftk in.pdf update_info in.info output out.pdf```
+```pdftk one.pdf update_info in.info output out.pdf```
 
 The pdftk has other functionalities such as attaching files to pdf, unpacking files, compress or flatten pdf files. Since, these functions are not very common, these are not covered here.
