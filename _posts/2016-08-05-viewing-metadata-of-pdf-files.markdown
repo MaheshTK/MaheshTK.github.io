@@ -13,7 +13,7 @@ Exiftool can be downloaded [here](http://www.sno.phy.queensu.ca/~phil/exiftool/e
 
 It can be placed in system folder (usually C:\Windows folder) after renaming the executable from `exiftool(‑k).exe` to `exiftool.exe` to allow it to be run by typing `exiftool` at the command line.
 
-Once done, fire commandline and start using Exiftool. I prefer to to open the desired folder in explorer, and then right click while holding SHIFT key. Then from context menu, select 'open command line here'. 
+Once done, fire commandline and start using Exiftool. I prefer to to open the desired folder in explorer, and then right click while holding SHIFT key. Then from context menu, select *open command line here*. 
 
 ## Using Exiftool for viewing pdf metadata
 
