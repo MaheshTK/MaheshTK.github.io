@@ -72,7 +72,7 @@ Write a report on PDF document metadata and bookmarks to report.txt
 
 ``pdftk in.pdf dump_data output report.txt``
 
-### Combine two files to generate one output file.
+### Combine files 
 
 There are various ways, which can be used to combine various files. One can select pdf files, respective page ranges, collate files, reverse page order and combination of all above.
 
@@ -104,7 +104,7 @@ Rotate specific pages of different documents and combine them.
 
 ```pdftk A=one.pdf B=two.pdf cat A1-12east A13-end Bsouth```
 
-### Add stamp or letterhead header to file
+### Add stamp or letterhead header 
 
 Watermark can be added in the background of pages using *background* command. This feature can also be used to add letterhead heading to the document pages. However, it shall be noted that the image is placed in the background. It shall be noted that this command takes first page of background file and use it for all pages in main document.
 
