@@ -38,7 +38,7 @@ The main advantage of these programs is that these are free, portable, efficient
 |Extract|```pdftk one.pdf cat 1-12 24-end output output.pdf```|
 |Rotate|```pdftk one.pdf cat cat 1east 2-end output out.pdf```|
 |Burst|```pdftk one.pdf burst```|
-|Encrypt|pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing|
+|Encrypt|`pdftk 1.pdf output 1.128.pdf owner_pw foo user_pw baz allow printing`|
 
 ### Operating single file
 
