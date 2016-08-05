@@ -1,6 +1,6 @@
 ---
 published: true
-title: Manipulating pdf files
+title: Manipulating pdf files using pdftk
 layout: post
 tags: [pdf, productivity, office]
 categories: [office, productivity]
@@ -150,6 +150,8 @@ The pdftk has other functionalities such as attaching files to pdf, unpacking fi
 
 Of course, nothing in life is perfect. Especially if it is free. Pdftk has its own limitations. Though, over time user becomes comfortable with command line after initial period of hesitation, it may be considered restraining by many.
 
-One important functionality missing from pdftk is ability to crop pages. Ability to convert to image files and linearisation is also missing, 
+One important functionality missing from pdftk is ability to crop pages. Ability to convert to image files and linearisation is also missing.
 
-Apart from that this indeed is an extremely powerful tool capable of batch scripting. Once you get hang of it, its difficult to part ways from it.
+### Conclusion
+
+Apart from these two limitations, pdftk is indeed an extremely powerful tool capable of batch scripting. Once you get hang of it, its difficult to part ways from it.
