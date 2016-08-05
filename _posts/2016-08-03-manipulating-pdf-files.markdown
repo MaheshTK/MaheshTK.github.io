@@ -145,3 +145,11 @@ Place metadata to pdf file from txt file
 ```pdftk one.pdf update_info in.info output out.pdf```
 
 The pdftk has other functionalities such as attaching files to pdf, unpacking files, compress or flatten pdf files. Since, these functions are not very common, these are not covered here.
+
+### Limitations of pdftk
+
+Of course, nothing in life is perfect. Especially if it is free. Pdftk has its own limitations. Though, over time user becomes comfortable with command line after initial period of hesitation, it may be considered restraining by many.
+
+One important functionality missing from pdftk is ability to crop pages. Ability to convert to image files and linearisation is also missing, 
+
+Apart from that this indeed is an extremely powerful tool capable of batch scripting. Once you get hang of it, its difficult to part ways from it.
