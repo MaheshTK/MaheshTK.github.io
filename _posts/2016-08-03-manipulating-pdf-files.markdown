@@ -76,7 +76,9 @@ It is very convenient to provide handles to input files as these can be convenie
 
 `A=one.pdf B=two.pdf` 
 
-In case, the input file is encrypted, the password shall be provided. These are taken in order by default. Otherwise, password can be provided as per handle as `input_pw  A=passwordA B=passwordB`
+In case, the input file is encrypted, the password shall be provided. These are taken in order by default. Otherwise, password can be provided as per handle as 
+
+`A=one.pdf B=two.pdf input_pw  A=passwordA B=passwordB`
 
 ### How to specify output file range
 
@@ -84,7 +86,7 @@ Page range can be specified using the page numbers of file with or without handl
 
 `12-24` or `A12-24`
 
-Use `end` as suffix to specify last page of the file. Use `r` as prefix to specify reverse order of pages. Use `odd` and `even' to specify odd or even pages of the document. Like,
+Use `end` as suffix to specify last page of the file. Use `r` as prefix to specify reverse order of pages. Use `odd` and `even` to specify odd or even pages of the document. Like,
 
 `A1-12 A14-end` to exclude page 13 
 
