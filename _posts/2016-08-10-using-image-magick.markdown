@@ -25,7 +25,7 @@ This command will convert page 3 to 6 to jpg file with name out + 4 digit suffix
 
 #### Resize image
 
-`Convert with aspect ratio`
+Convert with aspect ratio
 
 `convert one.jpg -resize 200x100 out.jpg`
 
@@ -47,13 +47,13 @@ Resize to height 100
 
 #### Make a montage 
 
-~~~~
+```
 montage -tile 4x4 -geometry 200x300+5+5 *.jpg out.jpg
 montage -tile 5x1 -geometry 500x800+40 ale.jpg ale.jpg ale.jpg ale.jpg ale.jpg out1.jpg
 montage -tile 6x1 -geometry 400x640+36 ale.jpg ale.jpg ale.jpg ale.jpg ale.jpg ale.jpg out2.jpg
 montage -tile 8x1 -geometry 280x448+30 ale.jpg ale.jpg ale.jpg ale.jpg ale.jpg ale.jpg ale.jpg ale.jpg out4.jpg
 montage -tile 1x6 -geometry +2+20 out1.jpg out1.jpg out2.jpg out2.jpg out4.jpg out4.jpg out5.j
-~~~~
+```
 
 #### Crop all files in folder
 
