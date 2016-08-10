@@ -50,6 +50,50 @@ Once installed it is available at command line. In case of any issue, copy pdftk
 
 Command line can be invoked in many ways. One of the simplest way is to open through explorer. Open the working folder, right click while pressing SHIFT key. From context menu, select *Open command window here*. Voila !! command line with curser at present folder is open. Just start typing the commands.
 
+### Basic command structure
+
+Simple command for pdftk looks like
+
+`pdftk <input files> <operation> <arguments> output <output fiename> `
+
+A more complicated command looks like
+
+`pdftk <input files> input_pw <password> <operation> <arguments> output <output fiename> encrypt_128 owner_pw <password> user_pw <password> verbose dont_ask`
+
+### How to specify input files
+
+The input files can be specified as a lateral list for example
+
+`one.pdf two.pdf three.pdf`
+
+`*.pdf`
+
+`"C:\test file\one.pdf" two.pdf`
+
+Note that in all examples, the files referred from the parent folder. However, for third example, the absolute path is given. Also note the double quotes (" ") as the folder path contains a space character. Similarly, it is also possible to provide relative path.
+
+It is very convenient to provide handles to input files as these can be convenient to use the handles in specifying operations on the files. 
+
+`A=one.pdf B=two.pdf` 
+
+In case, the input file is encrypted, the password shall be provided. These are taken in order by default. Otherwise, password can be provided as per handle as `input_pw  A=passwordA B=passwordB`
+
+### How to specify output file range
+
+Page range can be specified using the page numbers of file with or without handles. To specify page 12 to 24 command as follows.
+
+`12-24` or `A12-24`
+
+Use `end` as suffix to specify last page of the file. Use `r` as prefix to specify reverse order of pages. Use `odd` and `even' to specify odd or even pages of the document. Like,
+
+`A1-12 A14-end` to exclude page 13 
+
+`r3-r1` to specify last three pages of the document.
+
+`Aend-1` will select all pages in reverse order.
+
+`A2-30evenleft` will select even pages in page range 2 to 30 and rotate them by 90 degrees counterclockwise.
+
 ### Operating single file
 
 Extract some pages from file 
