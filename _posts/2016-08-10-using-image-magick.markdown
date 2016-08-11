@@ -34,11 +34,17 @@ Image files can be converted to pdf files
 
 `convert one.jpg out.pdf`
 
+To convert multiple JPEG images to individual PDF pages, use:
+
+`convert *.jpg +adjoin page-%d.pdf`
+
 #### Resize image
 
-Images can be resized to desired resolution. Following command resizes image while maintaining aspect ratio while maintaining longest possible dimension. Instead of `200x100` specifying only width (`200`) or height (`x100) is also possible. For forcing size without aspect ratio use `200x100!` instead.
+Images can be resized to desired resolution. Following command resizes image while maintaining aspect ratio while maintaining longest possible dimension. Instead of `200x100` specifying only width (`200`) or height (`x100) is also possible. For forcing size without aspect ratio use `200x100!` instead. Width or height can be referred as % values as well e.g. `200x50%' for specific ratio or `200%` for increasing image size by 200%.
 
 `convert one.jpg -resize 200x100 out.jpg`
+
+It is also possible to specify _enlarge only if_ size is smaller than specific value by operator `<` like `200x100<` or specify _shrink only if_ image is greater than specific value using operator `<` like `200x100>` .
 
 #### Rotate image
 
