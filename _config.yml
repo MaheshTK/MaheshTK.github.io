@@ -3,6 +3,6 @@ pygments: true
 markdown: kramdown
 url: http://MaheshTK.github.io
 title: Productivity tools
-tagline: A journey towards effient workflows
-description: A journey towards effient workflows
+tagline: A journey towards efficient workflow
+description: A journey towards effient workflow
 paginate: 5
