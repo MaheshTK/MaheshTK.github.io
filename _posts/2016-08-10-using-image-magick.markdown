@@ -32,26 +32,6 @@ The gravity command specifies where the gravity or reference of the image lies. 
 
 It is especially useful when using crop with reference from center. The use with geometry is explained as above.
 
-#### Using imagemagick for converting pdf file to image file
-
-It is possible to convert pdf file pages to image files at desired resolution and color depth. Following command will convert page 3 to 6 to jpg file with name out + 4 digit suffix at resolution of 300 DPI.
-
-`"C:\Program Files\ImageMagick-7.0.2-Q16\convert.exe" -density 300 one.pdf[2-5] out%04d.jpg`
-
-#### Make a blank document 
-
-A blank document or a canvas can be created.
-
-`convert -size 2400x3300 canvas:white one.jpg`
-
-#### Make a composite
-
-A composite image can be created by overlaying images over one another.
-
-`composite -geometry +625+500 dl1.jpg composite1.jpg`
-
-`composite -geometry +625+1700 dl2.jpg composite.jpg`
-
 #### Convert image format
 
 Images can be converted to different image format and different quality.
@@ -68,17 +48,43 @@ To convert multiple JPEG images to individual PDF pages, use:
 
 `convert *.jpg +adjoin page-%d.pdf`
 
+It is possible to convert pdf file pages to image files at desired resolution and color depth. Following command will convert page 3 to 6 to jpg file with name out + 4 digit suffix at resolution of 300 DPI.
+
+`"C:\Program Files\ImageMagick-7.0.2-Q16\convert.exe" -density 300 one.pdf[2-5] out%04d.jpg`
+
+#### Make a blank document or canvas
+
+A blank document or a canvas can be created.
+
+`convert -size 2400x3300 canvas:white one.jpg`
+
+#### Make a composite
+
+A composite image can be created by overlaying images over one another.
+
+`composite -geometry +625+500 dl1.jpg composite1.jpg`
+
+`composite -geometry +625+1700 dl2.jpg composite.jpg`
+
 #### Resize image
 
 Images can be resized to desired resolution. 
 
 `convert one.jpg -resize 200x100 out.jpg`
 
-It is also possible to specify _enlarge only if_ size is smaller than specific value by operator `<` like `200x100<` or specify _shrink only if_ image is greater than specific value using operator `<` like `200x100>` .
+For specification of dimensions refer the _geometry_ specification above.
 
 #### Rotate image
 
+Image can be rotated by this command.
+
 `convert one.jpg -rotate 90 out.jpg`
+
+#### Crop image
+
+Images can be cropped. Also refer the commands like `density` , `page` , `gravity` and `geometry`.
+
+`convert one.jpg -gravity center -crop 50% out.jpg`
 
 #### Make a montage 
 
@@ -95,6 +101,10 @@ Following small script will generate the montage for passport size printing.
 `montage -tile 8x1 -geometry 280x448+30 a.jpg -duplicate 7 out4.jpg`
 
 `montage -tile 1x6 -geometry +2+20 out1.jpg out1.jpg out2.jpg out2.jpg out4.jpg out4.jpg out5.jpg`
+
+
+#### Crop files
+
 
 
 #### Crop all files in folder
