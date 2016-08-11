@@ -20,6 +20,7 @@ A blank document or a canvas can be created.
 A composite image can be created by overlaying images over one another.
 
 `composite -geometry +625+500 dl1.jpg composite1.jpg`
+
 `composite -geometry +625+1700 dl2.jpg composite.jpg`
 
 #### Convert image format
