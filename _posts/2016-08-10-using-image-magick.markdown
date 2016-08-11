@@ -41,7 +41,7 @@ To convert multiple JPEG images to individual PDF pages, use:
 
 #### Resize image
 
-Images can be resized to desired resolution. Following command resizes image while maintaining aspect ratio while maintaining longest possible dimension. Instead of `200x100` specifying only width (`200`) or height (`x100) is also possible. For forcing size without aspect ratio use `200x100!` instead. Width or height can be referred as % values as well e.g. `200x50%' for specific ratio or `200%` for increasing image size by 200%.
+Images can be resized to desired resolution. Following command resizes image while maintaining aspect ratio while maintaining longest possible dimension. Instead of `200x100` specifying only width (`200`) or height (`x100`) is also possible. For forcing size without aspect ratio use `200x100!` instead. Width or height can be referred as % values as well e.g. `200x50%' for specific ratio or `200%` for increasing image size by 200%.
 
 `convert one.jpg -resize 200x100 out.jpg`
 
