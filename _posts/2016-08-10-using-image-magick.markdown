@@ -3,6 +3,25 @@ published: true
 title: Using Image Magick
 layout: post
 ---
+### Understanding critical options
+
+#### Geometry
+
+Geometry command specifies desired width and height of an image and other dimensional quantities. 
+
+Dimensions are specified as `x-width x y-width` and the meaning changes as per requirement. Let us take example of image of 600x400 and _geometry_ specification as 100x200.
+
+| specification | description | Aspect Ratio | resulting image |
+| `100x200` | Scaled as per specification. | Yes | 100 x 150 |
+| `100x200!` | Forced scale as per specification. | No | 100 x 200 |
+| `100x200^` | Scaled as per maximum dimension. | Yes | 133 x 200 |
+| `100x200>` | Shrinked _only if larger_ than specification. | Yes  | 100 x 150 |
+| `100x200<` | Enlarged _only if smaller_ than specification. | Yes  | 600 x 400 |
+| `50%x200%` | Scaled as per percentage. | Yes | 300 x 200 |
+| `200%x50%` | Scaled as per percentage. | Yes | 133 x 200 |
+| `100` | Scaled as per length. | Yes | 100 x 150 |
+| `x200` | Scaled as per height. | Yes | 133 x 200 |
+
 #### Using imagemagick for converting pdf file to image file
 
 It is possible to convert pdf file pages to image files at desired resolution and color depth. Following command will convert page 3 to 6 to jpg file with name out + 4 digit suffix at resolution of 300 DPI.
@@ -41,7 +60,7 @@ To convert multiple JPEG images to individual PDF pages, use:
 
 #### Resize image
 
-Images can be resized to desired resolution. Following command resizes image while maintaining aspect ratio while maintaining longest possible dimension. Instead of `200x100` specifying only width (`200`) or height (`x100`) is also possible. For forcing size without aspect ratio use `200x100!` instead. Width or height can be referred as % values as well e.g. `200x50%' for specific ratio or `200%` for increasing image size by 200%.
+Images can be resized to desired resolution. 
 
 `convert one.jpg -resize 200x100 out.jpg`
 
