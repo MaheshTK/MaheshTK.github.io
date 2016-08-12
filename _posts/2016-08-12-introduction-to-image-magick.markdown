@@ -40,7 +40,7 @@ These operations are carried out on input images.
 #### Multi File image operators
 
 | Basic | `-append  -flatten   -composite -combine` |
-| Advanced | `-mosaic  -layers   -fx  -coalesce  -clut  -average  -evaluate-sequence |
+| Advanced | `-mosaic  -layers   -fx  -coalesce  -clut  -average  -evaluate-sequence` |
 
 #### Image stack operators
 
