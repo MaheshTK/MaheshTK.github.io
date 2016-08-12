@@ -52,9 +52,9 @@ These operations are carried out on input images.
 
 ### Cheat sheet
 
-| Convert image | 'convert one.png -geometry 800x600 -quality 90 out.jpg' |
-| Convert pdf | 'convert -density 300 one.pdf[2-5] out%04d.jpg' |
-| Blank Image | 'convert -size 2400x3300 canvas:white one.jpg' |
+| Convert image | `convert one.png -geometry 800x600 -quality 90 out.jpg` |
+| Convert pdf | `convert -density 300 one.pdf[2-5] out%04d.jpg` |
+| Blank Image | `convert -size 2400x3300 canvas:white one.jpg` |
 | Resize | `convert one.jpg -resize 200x100 out.jpg' |
 | Crop | `convert one.jpg -gravity center -crop 50%x20%+0+200 out.jpg` |
 | Rotate | `convert one.jpg -rotate 90 out.jpg` |
