@@ -57,7 +57,6 @@ These operations are carried out on input images.
 | Blank Image | `convert -size 2400x3300 canvas:white one.jpg` |
 | Resize | `convert one.jpg -resize 200x100 out.jpg` |
 | Crop | `convert one.jpg -gravity center -crop 50%x20%+0+200 out.jpg` |
-
 | Rotate | `convert one.jpg -rotate 90 out.jpg` |
 | Montage | `montage -tile 4x4 -geometry 200x300+5+5 *.jpg out.jpg` |
 | Filter | `convert one.jpg -charcoal 2 out.jpg` |
