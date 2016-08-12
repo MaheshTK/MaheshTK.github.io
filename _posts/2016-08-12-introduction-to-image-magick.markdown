@@ -55,7 +55,7 @@ These operations are carried out on input images.
 | Convert image | `convert one.png -geometry 800x600 -quality 90 out.jpg` |
 | Convert pdf | `convert -density 300 one.pdf[2-5] out%04d.jpg` |
 | Blank Image | `convert -size 2400x3300 canvas:white one.jpg` |
-| Resize | `convert one.jpg -resize 200x100 out.jpg' |
+| Resize | `convert one.jpg -resize 200x100 out.jpg` |
 | Crop | `convert one.jpg -gravity center -crop 50%x20%+0+200 out.jpg` |
 
 | Rotate | `convert one.jpg -rotate 90 out.jpg` |
@@ -63,4 +63,3 @@ These operations are carried out on input images.
 | Filter | `convert one.jpg -charcoal 2 out.jpg` |
 | `gravity` | Specifies reference for image manipulation. Options are eight directions (`northwest`, `north` etc. ) and `center`. This combined with offset (as in `geometry`) will define where operation happens. |
 | `geometry` | Specifies desired width and height of an image and other dimensional quantities. it can be `100x200` (fit), `100x200^` (fit maximum), `100%x50%` (fit percentage), `100` (fit width), `x200` (fit height) or `100x200!` (stretch to fit). |
-
