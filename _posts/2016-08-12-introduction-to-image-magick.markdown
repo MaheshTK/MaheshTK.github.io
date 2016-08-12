@@ -48,7 +48,7 @@ These operations are carried out on input images.
 
 #### Special operators
 
-| Operator | `-geometry  -version  -list  -bench  -concurrent  -preview `
+| Operator | `-geometry  -version  -list  -bench  -concurrent  -preview ` |
 
 ### Cheat sheet
 
