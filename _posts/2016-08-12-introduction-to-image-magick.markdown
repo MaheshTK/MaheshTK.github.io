@@ -13,7 +13,7 @@ Setting are not actual operation, but settings for the image processing.
 | Operator settings | `-gravity -background -bordercolor -stroke -font -pointsize -strokewidth -box`  |
 | Input settings | `-label -delay -dispose -page -comment -size` | 
 | Output Settings | `-quality -loop -compression -format -path -transparent-color` | 
-| Control & Debugging Settings | `-verbose -debug -warnings -quiet -monitor -regard-warnings` |
+| Control Settings | `-verbose -debug -warnings -quiet -monitor -regard-warnings` |
 
 #### Simple image operators
 
