@@ -61,4 +61,4 @@ These operations are carried out on input images.
 | Montage | `montage -tile 4x4 -geometry 200x300+5+5 *.jpg out.jpg` |
 | Filter | `convert one.jpg -charcoal 2 out.jpg` |
 | `gravity` | Specifies reference for image manipulation. <br /> Options are eight directions (`northwest`, `north` etc. ) and `center`. <br /> This combined with offset (as in `geometry`) will define where operation happens. |
-| `geometry` | Specifies desired width and height of an image and other dimensional quantities. <br /> it can be `100x200` (fit), `100x200^` (fit maximum), `100%x50%` (fit percentage), `100` (fit width), `x200` (fit height) or `100x200!` (stretch to fit). |
+| `geometry` | Specifies desired width and height of an image and other dimensional quantities. <br /> it can be `100x200` (fit), `100x200^` (fit maximum), `100%x50%` (fit percentage), <br /> `100` (fit width), `x200` (fit height) or `100x200!` (stretch to fit). |
