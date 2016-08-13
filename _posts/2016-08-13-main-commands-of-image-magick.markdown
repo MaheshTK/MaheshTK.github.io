@@ -32,4 +32,4 @@ The gravity command specifies where the gravity or reference of the image lies. 
 
 | `-gravity` _type_ | `NorthWest, North, NorthEast, West, Center, East, SouthWest, South, SouthEast` |
 | | `convert image.png -gravity Center -crop 10x10-40+20 output.png` |
-| | Above command establishes the center of image as reference. An area of 10x10 is cropped at right lower offset of -40+20. |
+| | Above command establishes the center of image as reference. <br /> An area of 10x10 is cropped at right lower offset of -40+20. |
