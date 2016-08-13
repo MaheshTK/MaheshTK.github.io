@@ -28,7 +28,8 @@ In above case, `100x200+10+20` will place the image at offset from upper left co
 
 #### Gravity 
 
-| `-gravity` _type_ | `convert image.png -gravity Center -crop 10x10-40+20 output.png` |
+| `-gravity` _type_ | _NorthWest, North, NorthEast, West, Center, East, SouthWest, South, SouthEast_ |
+| | `convert image.png -gravity Center -crop 10x10-40+20 output.png` |
 
 The gravity command specifies where the gravity or reference of the image lies. Various options include `NorthWest`, `North`, `NorthEast`, `West`, `Center`, `East`, `SouthWest`, `South`, `SouthEast`. The reference of gravity changes as per the command like `crop` or `geometry` or `resize` etc. 
 
