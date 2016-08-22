@@ -26,15 +26,15 @@ Blanking Image with Picked Color
 
 `convert rose: -fx 'p{0,0}'  color_pick_fx.png`
 
+Generate a yellow canvas...
+
+`convert  test.png  -gamma -1,-1,0  -alpha off  yellow_gamma.png`
+
 ### Transparent Canvas
 
 The fastest and easiest way is to just get IM to directly clear the image to transparency, using the "-alpha transparent" operator.
 
 `convert test.png  -alpha transparent trans_alpha.png`
-
-Generate a yellow canvas...
-
-`convert  test.png  -gamma -1,-1,0  -alpha off  yellow_gamma.png`
 
 ### Gradients of Color
 
