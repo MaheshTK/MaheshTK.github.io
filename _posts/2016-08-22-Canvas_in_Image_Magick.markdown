@@ -3,6 +3,13 @@ published: true
 title: Create Canvas
 layout: post
 ---
+### Cheat Sheet
+
+| Solid Canvas | `convert -size 100x100 xc:wheat  canvas_wheat.gif` |
+| Blanking with picked color | `convert rose: -fx 'p{0,0}'  color_pick_fx.png` |
+| Transparent canvas | `convert test.png  -alpha transparent trans_alpha.png` |
+| Gradient Canvas | `convert -size 100x100  gradient:tomato-steelblue  gradient_range5.jpg` |
+
 ### Create solid canvas
 
 A solid color canvas to be generated
