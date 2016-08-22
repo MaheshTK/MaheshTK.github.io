@@ -3,7 +3,7 @@ published: true
 title: Create Canvas
 layout: post
 ---
-### Create canvas
+### Create solid canvas
 
 A solid color canvas to be generated
 
@@ -26,7 +26,7 @@ Blanking Image with Picked Color
 
 `convert rose: -fx 'p{0,0}'  color_pick_fx.png`
 
-Transparent Canvas
+### Transparent Canvas
 
 The fastest and easiest way is to just get IM to directly clear the image to transparency, using the "-alpha transparent" operator.
 
@@ -36,7 +36,7 @@ Generate a yellow canvas...
 
 `convert  test.png  -gamma -1,-1,0  -alpha off  yellow_gamma.png`
 
-Gradients of Color
+### Gradients of Color
 
 This will generate vertical gradient from white to black.
 
