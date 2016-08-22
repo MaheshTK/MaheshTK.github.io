@@ -1,6 +1,6 @@
 ---
 published: true
-title: Viewing metadata of pdf files
+title: Create Canvas
 layout: post
 ---
 ### Create canvas
