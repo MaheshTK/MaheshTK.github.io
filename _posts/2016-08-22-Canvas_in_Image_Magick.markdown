@@ -6,8 +6,13 @@ layout: post
 ### Cheat Sheet
 
 | Solid Canvas | `convert -size 100x100 xc:wheat  canvas_wheat.gif` |
-| Blanking with picked color | `convert rose: -fx 'p{0,0}'  color_pick_fx.png` |
+
 | Transparent canvas | `convert test.png  -alpha transparent trans_alpha.png` |
+
+| Blanking with picked color | `convert rose: -fx 'p{0,0}'  color_pick_fx.png` |
+
+| Canvas of image size | `convert test.png -alpha Opaque +level-colors Sienna color_levelc.gif`|
+
 | Gradient Canvas | `convert -size 100x100  gradient:tomato-steelblue  gradient_range5.jpg` |
 
 ### Create solid canvas
