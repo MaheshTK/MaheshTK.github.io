@@ -1,3 +1,10 @@
+---
+published: true
+title: Viewing metadata of pdf files
+layout: post
+---
+
+
 ### Create canvas
 
 A solid color canvas to be generated
