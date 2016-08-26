@@ -8,7 +8,7 @@ layout: post
 | Reverse | `pdftk A=one.pdf cat Aend-5 output out.pdf` |
 | Extract images | `pdfimages one.pdf -j ../images` | 
 | Image convert | `convert -density 300 -resize 200% one.pdf[2-3] -quality 80 out.jpg` |
-| crop | crop | 
+| crop | `gswin32c.exe   -o cropped.pdf  -sDEVICE=pdfwrite -c "[/CropBox [24 72 559 794]" -c " /PAGES pdfmark"  -f uncropped-input.pdf` | 
 | delete metadata | delete metadata |
 | edit metadata | write metadata | |
 | encrypt | | |
