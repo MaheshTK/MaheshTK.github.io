@@ -12,11 +12,8 @@ Pages 5 to end of document B  <br />
 All pages of C in reverse oreder |
 
 | Extract images | `pdfimages one.pdf -j ../images` | Extract all images of one.pdf |
-
 | Image convert | `convert -density 300 -resize 200% one.pdf[2-3] -quality 80 out.jpg` | Convert page 2 and 3 to jpg image file |
-
 | crop | crop | |
-
 | delete metadata | delete metadata | |
 
 | edit metadata | write metadata | |
