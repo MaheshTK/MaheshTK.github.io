@@ -3,7 +3,7 @@ published: true
 title: PDF cheat sheet combined
 layout: post
 ---
-| Join | `pdftk A=one.pdf B=two.pdf cat A1-5 A5 B output out.pdf` |
+| Join | `pdftk A=one.pdf B=two.pdf cat A1-5 A5 B6-20odd output out.pdf` |
 | Rotate | `pdftk  A=one.pdf B=two.pdf cat A1-5east B5-endsouth output out.pdf` |
 | Reverse | `pdftk A=one.pdf cat Aend-5 output out.pdf` |
 | Extract images | `pdfimages one.pdf -j ../images` | 
