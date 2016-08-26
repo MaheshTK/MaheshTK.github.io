@@ -15,3 +15,5 @@ layout: post
 | limited priviledge | | |
 | background | | |
 | birst | | |
+
+[ghostscript](http://www.peteryu.ca/tutorials/publishing/pdf_manipulation_tips)
