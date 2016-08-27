@@ -7,7 +7,7 @@ The  [XPDF](http://www.foolabs.com/xpdf/download.html) provides some really hand
 
 ## Cheat sheet
 
-| Extract Images | `pdfimages -f 10 -l 18 -j -opw owner_pwd upw user_pwd one.pdf ../images' |
+| Extract Images | `pdfimages -f 10 -l 18 -j -opw owner_pwd upw user_pwd one.pdf ../images` |
 | Convert pdf to png image | `pdftopng -f 10 -l 18 -r 300 -gray one.pdf ../images` |
 | Convert pdf to text | `pdftotext -f 10 -l 18 one.pdf` |
 
