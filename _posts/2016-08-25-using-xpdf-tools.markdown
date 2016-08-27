@@ -5,6 +5,12 @@ layout: post
 ---
 The  [XPDF](http://www.foolabs.com/xpdf/download.html) provides some really handy tools. Very notable one is __pdfimages__ which can extract images from the pdf files. Other useful tools include __pdftopng__ and __pdfdetach__ .
 
+## Cheat sheet
+
+| Extract Images | `pdfimages -f 10 -l 18 -j -opw owner_pwd upw user_pwd one.pdf ../images' |
+| Convert pdf to png image | `pdftopng -f 10 -l 18 -r 300 -gray one.pdf ../images` |
+| Convert pdf to text | `pdftotext -f 10 -l 18 one.pdf` |
+
 ## xpdf
 
 Xpdf  is a viewer for Portable Document Format (PDF) files.  To run xpdf to open file.pdf at page 18, type:
@@ -42,6 +48,14 @@ Pdftopng converts  Portable  Document  Format  (PDF)  files  to  color,grayscale
 
 `pdftopng -f 10 -l 18 -r 300 -gray one.pdf ../images`
 
+## pdftotext
+
+Pdftotext converts Portable Document Format (PDF) files to plain text. Pdftotext reads the PDF file, PDF-file, and writes a text  file,  text-file.   If  text-file  is not specified, pdftotext converts file.pdf to file.txt.  If text-file is '-', the text is sent to stdout.
+
+`pdftotext -f 10 -l 18 one.pdf`
+
+`pdftotext -layout -table -raw -opw owner_pwd upw user_pwd one.pdf ../text/out.txt`
+
 ## pdfdetach
 
 Pdfdetach lists or extracts embedded files (attachments) from a  Portable Document Format (PDF) file.
@@ -71,15 +85,6 @@ In addition, the following information is printed:
     tagged (yes/no)	form (AcroForm / XFA / none)    page count    encrypted flag (yes/no)
     print and copy permissions (if encrypted)    page size and rotation    file size
     linearized (yes/no)    PDF version    metadata (only if requested)
-
-## pdftotext
-
-Pdftotext converts Portable Document Format (PDF) files to plain text. Pdftotext reads the PDF file, PDF-file, and writes a text  file,  text-file.   If  text-file  is not specified, pdftotext converts file.pdf to file.txt.  If text-file is '-', the text is sent to stdout.
-
-`pdftotext -f 10 -l 18 one.pdf`
-
-`pdftotext -layout -table -raw -opw owner_pwd upw user_pwd one.pdf ../text/out.txt`
-
 
 ## pdftoppm
 
