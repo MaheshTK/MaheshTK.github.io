@@ -16,7 +16,7 @@ layout: post
 | Extract metadata to text file | `exiftool -a -g one.pdf > meta.txt` |
 | Delete metadata of files | `exiftool -all= one.pdf` |
 | Deleting XMP data | `BeCyPDFMetaEdit one.pdf -X 1` |
-| [crop](http://stackoverflow.com/questions/6183479/cropping-a-pdf-using-ghostscript-9-01,) or [pdfill](http://www.pdfill.com/pdf_tools_free.html)| `gswin32c.exe   -o cropped.pdf  -sDEVICE=pdfwrite -c "^ </BR />[/CropBox [24 72 559 794]" -c " /PAGES pdfmark"  -f uncropped-input.pdf` | 
+| [crop](http://stackoverflow.com/questions/6183479/cropping-a-pdf-using-ghostscript-9-01,) or [pdfill](http://www.pdfill.com/pdf_tools_free.html)| `gswin32c.exe   -o cropped.pdf  -sDEVICE=pdfwrite -c "^ <br />[/CropBox [24 72 559 794]" -c " /PAGES pdfmark"  -f uncropped-input.pdf` | 
 
 
 [ghostscript](http://www.peteryu.ca/tutorials/publishing/pdf_manipulation_tips)
