@@ -45,4 +45,10 @@ For deleting XMP data
 
 ```BeCyPDFMetaEdit one.pdf  -X 1```
 
+### Using BeCyPDFMetaedit for writing metadata
+
+Here `-EditMode 2` sets pdf file for complete rewrite. The `-e 3` sets to encryption. The `-p p` sets permission to degraded printing.
+
+BeCyPDFMetaEdit one.pdf -EditMode 2 -T Title -S Subject -A Author -K Keywords -R Creator -P Producer -X 1 -PWD Open_pwd -e 3 -o Owner_PWD -u User_PWD -p p
+
 [MetaData Extraction](http://www.forensicswiki.org/wiki/Document_Metadata_Extraction)
