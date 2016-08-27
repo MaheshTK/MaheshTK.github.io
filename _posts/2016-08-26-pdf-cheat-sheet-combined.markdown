@@ -12,12 +12,10 @@ layout: post
 | Convert pdf to text | `pdftotext -f 10 -l 18 one.pdf` |
 | Encrypt | `pdftk one.pdf output output.pdf owner_pw ownpass` |
 | Special Encrypt | `pdftk one.pdf output out.pdf owner_pw foo user_pw baz allow printing` |
-
-| Add stamp or watermark | `pdftk one.pdf background back.pdf output out.pdf`` |
+| Add stamp or watermark | `pdftk one.pdf background back.pdf output out.pdf` |
 | Extract metadata to text file | `exiftool -a -g one.pdf > meta.txt` |
 | Delete metadata of files | `exiftool -all= one.pdf` |
 | Deleting XMP data | `BeCyPDFMetaEdit one.pdf -X 1` |
-
 | [crop](http://stackoverflow.com/questions/6183479/cropping-a-pdf-using-ghostscript-9-01,) or [pdfill](http://www.pdfill.com/pdf_tools_free.html)| `gswin32c.exe   -o cropped.pdf  -sDEVICE=pdfwrite -c "[/CropBox [24 72 559 794]" -c " /PAGES pdfmark"  -f uncropped-input.pdf` | 
 
 
